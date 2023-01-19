@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <body>
-   
+   <h1> This code very simple but importent Issue Solve </h1>
 <p id="show">This is my Web site test </p>
+
 <button id ="button-delete" type="button" onclick="deleted();document.getElementById('show').style.display='none'">Click Hide </button>
 
-<button type="button" onclick="document.getElementById('demo').style.display='block'">Click Show!</button>
+<button type="button" onclick="document.getElementById('show').style.display='block'">Click Show!</button>
 
-<button onclick = "deleted();"> Hide Button Deleted </button>
-
-
+<button id="hide-b" onclick = "deleted();"> Hide Button Deleted </button>
 
 <script>
-function deleted() {
- document.getElementById("button-delete").remove();
-}
+   function deleted() {
+       document.getElementById("button-delete").remove();
+       document.getElementById("hide-b").remove();
+     }
 </script>
 </body>
 </html> 
